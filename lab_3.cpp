@@ -90,13 +90,12 @@ int main()
 		break;
 	case '-':
 		cout << "Wynik odejmowania " << a <<" od " << b << " wynosi: " << a - b;
-		cout << "Wynik odejmowania " << b << " od " << a << " wynosi: " << b - a;
 		break;
 	case '*':
-		cout << "Wynik mnożenia " << a << "*" << b << " wynosi:" << a * b;
+		cout << "Wynik mnożenia " << a << "*" << b << " wynosi: " << a * b;
 		break;
 	case '/':
-		cout << "Wynik dzielenia" << a << " przez " << b << " wynosi:" << a / b;
+		cout << "Wynik dzielenia " << a << " przez " << b << " wynosi: " << a / b;
 		break;
 
 	}
