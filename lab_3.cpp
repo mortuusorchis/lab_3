@@ -388,8 +388,8 @@ int main()
   } */
 
   // zadanie 16 --> tabliczka mnożenia
-  {
-	 
+  /*{
+
 	  for (int a = 1; a <= 10 ;a++) {
 		  for (int b = 1; b <= 10; b++) {
 			 int iloczyn = a * b;
@@ -398,5 +398,121 @@ int main()
 		  continue;
 	  }
 	  return 0;
+}*/
+// zadanie 17 --> Program, który liczy ile cyfr ma dana liczba
+/*{
+	int liczba;
+	int licznik_cyfr = 0;
+
+	cout << "Podaj nieujemna liczbe calkowita: ";
+	cin >> liczba;
+
+	if (liczba == 0) {
+		licznik_cyfr = 1;
+	}
+
+	else {
+	  while (liczba > 0) {
+		  liczba = liczba / 10; // Usuwamy ostatnią cyfrę
+		  licznik_cyfr++;
+	  }
+	}
+	  cout << "Liczba zawiera " << licznik_cyfr << " cyfr. ";
+	  return 0;
+	}*/
+
+	// zadanie 18 --> program, który sprawdza czy podana liczba jest liczbą pierwszą
+	/* {
+		int n;
+		int dzielnik = 2;
+		cout << "Podaj liczbe: ";
+		cin >> n;
+		if (n <= 1) {
+			cout << "Twoja liczba nie jest licza pierwsza. ";
+			return 0;
+		}
+		bool pierwsza = true;
+
+		for (dzielnik = 2; dzielnik <= std::sqrt(n); dzielnik++) {
+
+			if (n % dzielnik == 0) {
+				pierwsza = false;
+				break; // znalezienie dzielnika --> przerwanie pętli i przejscie do dalszej częci programu
+			}
+		} // zakończenie pęli for ();
+
+
+		if (pierwsza == true) {
+			cout << "Podana przez ciebie liczba  jest liczba pierwsza. ";
+		}
+		else {
+			cout << "Podana przez ciebie liczba nie jest liczba pierwsza. ";
+		}
+		return 0;
+   }*/
+   // zadanie 19
+	 /* {
+		  int opcja;
+		  do {
+		  cout << "Wybierz opcje z menu: \n";
+		  cout << "1 - Start \n2 - Ustawienia \n3 - Pomoc \n4 - Koniec\n ";
+		  cout << "Podaj numer opcji: ";
+		  cin >> opcja;
+
+		  switch (opcja) {
+
+		  case 1:
+			  cout << "Start \n";
+			  break;
+		  case 2:
+			  cout << "Ustawienia \n";
+			  break;
+		  case 3:
+			  cout << "Pomoc \n";
+			  break;
+		  case 4:
+			  cout << "Koniec \n";
+			  return 0;
+		  default:
+			  cout << "Nieprawidlowy wybor! Wybierz liczbe od 1 do 4. \n";
+		  }
+
+		  } while (opcja != 4);
+	  }*/
+	  // Zadanie 20
+	 /* {
+		  double s;
+		  double suma = 0.0;
+		  int licznik = 0;
+		  
+		  while (suma < 10.0) {
+			  suma = suma + 0.1;
+			  licznik = licznik + 1;
+
+			  cout << "Iteracja nr " << licznik << ", aktualna suma: " << suma << "\n";
+		  }
+		  cout << "Koniec programu :) \n";
+		  cout << "Wartosc sumy wynosi " << suma << endl;
+		  cout << "Wykonano " << licznik << " iterracji" << endl;
+		  return 0;
+
+} */
+// wersja z progiem
+{
+	const double PROG = 10.0; // Definiujemy próg jako stałą 
+
+	double suma = 0.0;
+	int licznik = 0;
+
+	while (suma < PROG) {
+		suma = suma + 0.1;
+		licznik = licznik + 1;
+
+		cout << "Iteracja nr " << licznik << ", aktualna suma: " << suma << "\n";
+	}
+
+	cout << "Koniec programu :) \n";
+	cout << "Wartosc sumy wynosi " << suma << endl;
+	cout << "Wykonano " << licznik << " iterracji" << endl;
+	return 0;
 }
-  // zadanie 17
