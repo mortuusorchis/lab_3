@@ -395,7 +395,7 @@ int main()
 			 int iloczyn = a * b;
 			 cout << a << " * " << b << " = " << iloczyn << "\t"  << endl;
 		  }
-		  continue;
+		  continue; // nie potrzeba
 	  }
 	  return 0;
 }*/
